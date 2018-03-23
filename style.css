@@ -37,7 +37,6 @@ li > a:hover {
     color: rgb(249, 249, 249);
     border-bottom: 2px solid white;
     text-decoration: none;
-
 }
 
 h2 {
@@ -65,3 +64,12 @@ figure {
     width: 100%;
     padding: 1rem;
 }
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1em;
+    background-color: rgb(143, 4, 3);
+    color: rgb(249, 249, 249);
+  }
