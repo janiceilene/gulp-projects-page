@@ -8,13 +8,33 @@ body {
     display: block;
 }
 
-h1 {
+.title {
     position: absolute;
     top: 1em;
     left: 1em;
     max-width: 70%;
     font-size: 3em;
     color: rgb(249, 249, 249)
+}
+
+@media (max-width: 440px) {
+    .title {
+        max-width: 50%;
+        font-size: 2em;
+    }
+
+    h1.section-heading {
+        padding: 1rem;
+    }
+
+    figure.repo-card {
+        padding: .5rem;
+    }
+
+    img.tiny-logo {
+        width: 75%;
+        padding: 1rem;
+    }
 }
 
 li {
@@ -39,9 +59,10 @@ li > a:hover {
     text-decoration: none;
 }
 
-h2 {
-    text-align: center;
-    padding: 2rem 0;
+.section-heading {
+    text-align: left;
+    padding: 2rem 2rem;
+    font-size: 3rem;
 }
 
 .subsection {
@@ -51,7 +72,7 @@ h2 {
     justify-content: space-around;
 }
 
-figure {
+.repo-card {
     margin: 1rem;
     padding: 2rem;
     text-align: center;
@@ -72,4 +93,23 @@ footer {
     font-size: 1em;
     background-color: rgb(143, 4, 3);
     color: rgb(249, 249, 249);
+  }
+
+  .feet {
+    width: 50%;
+    flex-grow: 0;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+  .donate {
+      border-radius: 3px;
+      text-transform: uppercase;
+      background-color: rgb(249, 249, 249);
+      color: black;
+      padding: 5px 30px;
+  }
+
+  .social-media {
+      max-width: 40px;
   }
